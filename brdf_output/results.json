@@ -1,0 +1,149 @@
+{
+ "checks": {
+  "Lambert": {
+   "max_albedo": 0.6999999999999998,
+   "reciprocity_max_rel_err": 0.0,
+   "chi2_p": 0.4371015046331142,
+   "is_speedup_vs_uniform": Infinity,
+   "cosine_speedup_vs_uniform": Infinity
+  },
+  "Oren-Nayar \u03c3=0.8": {
+   "max_albedo": 0.6047945776983619,
+   "reciprocity_max_rel_err": 0.0,
+   "chi2_p": 0.4371015046331142,
+   "is_speedup_vs_uniform": 18.445820049549177,
+   "cosine_speedup_vs_uniform": 10.707596935348343
+  },
+  "Phong plastic": {
+   "max_albedo": 0.900011612355622,
+   "reciprocity_max_rel_err": 0.0,
+   "chi2_p": 0.6634245383105941,
+   "is_speedup_vs_uniform": 262.31652220771525,
+   "cosine_speedup_vs_uniform": 2.5628829268505884
+  },
+  "Ward aniso": {
+   "max_albedo": 0.5815785469902008,
+   "reciprocity_max_rel_err": 0.0,
+   "chi2_p": 0.3149779290142769,
+   "is_speedup_vs_uniform": 1270.193832748021,
+   "cosine_speedup_vs_uniform": 1.0847560733897643
+  },
+  "GGX plastic": {
+   "max_albedo": 1.0254675627923309,
+   "reciprocity_max_rel_err": 4.1174156870773174e-15,
+   "chi2_p": 0.48502549017414964,
+   "is_speedup_vs_uniform": 275.60625778793707,
+   "cosine_speedup_vs_uniform": 5.012530993624693
+  },
+  "Gold (conductor)": {
+   "max_albedo": 0.9577737160820828,
+   "reciprocity_max_rel_err": 1.905472740985553e-15,
+   "chi2_p": 0.9164135799837697,
+   "is_speedup_vs_uniform": 1589.3635804968787,
+   "cosine_speedup_vs_uniform": 2.1797661941339945
+  },
+  "Copper aniso": {
+   "max_albedo": 0.9296319873904111,
+   "reciprocity_max_rel_err": 9.820168376940514e-16,
+   "chi2_p": 0.03547037795209657,
+   "is_speedup_vs_uniform": 68.42866932796318,
+   "cosine_speedup_vs_uniform": 1.9701619396007357
+  },
+  "Disney clearcoat": {
+   "max_albedo": 0.8467035976767218,
+   "reciprocity_max_rel_err": 4.109481626624837e-15,
+   "chi2_p": 0.34074958622594886,
+   "is_speedup_vs_uniform": 4.2359218881975815,
+   "cosine_speedup_vs_uniform": 4.016250959082585
+  }
+ },
+ "fits": {
+  "plastic": {
+   "rmse_log": 0.008188069020189112,
+   "rel_rmse": 0.0677630141989064,
+   "params": {
+    "specular.roughness": 0.3996,
+    "diffuse.albedo": [
+     0.7002,
+     0.3494,
+     0.0996
+    ],
+    "specular.f0": [
+     0.0484,
+     0.0484,
+     0.0482
+    ]
+   }
+  },
+  "oren-nayar-ggx": {
+   "rmse_log": 0.008185412927130683,
+   "rel_rmse": 0.06451411641272016,
+   "params": {
+    "diffuse.sigma": 0.0638,
+    "specular.roughness": 0.3996,
+    "diffuse.albedo": [
+     0.7029,
+     0.3507,
+     0.0999
+    ],
+    "specular.f0": [
+     0.0485,
+     0.0485,
+     0.0482
+    ]
+   }
+  },
+  "ward-plastic": {
+   "rmse_log": 0.09220140035238573,
+   "rel_rmse": 0.5952407782268201,
+   "params": {
+    "specular.alpha_x": 0.1667,
+    "diffuse.albedo": [
+     0.3677,
+     0.0364,
+     0.0
+    ],
+    "specular.ks": [
+     0.1186,
+     0.1148,
+     0.0983
+    ],
+    "specular.alpha_y": 0.1667
+   }
+  },
+  "phong-plastic": {
+   "rmse_log": 0.1504088551171061,
+   "rel_rmse": 0.41788242632103145,
+   "params": {
+    "specular.n": 39.2676,
+    "diffuse.albedo": [
+     0.7301,
+     0.3793,
+     0.129
+    ],
+    "specular.ks": [
+     0.0361,
+     0.0351,
+     0.0342
+    ]
+   }
+  },
+  "disney": {
+   "rmse_log": 0.008099006508554378,
+   "rel_rmse": 0.04707450431492967,
+   "params": {
+    "metallic": 0.0,
+    "specular": 0.6006,
+    "roughness": 0.4,
+    "sheen": 0.5123,
+    "clearcoat": 0.0,
+    "clearcoat_gloss": 0.0,
+    "base_color": [
+     0.7007,
+     0.351,
+     0.1002
+    ]
+   }
+  }
+ }
+}
